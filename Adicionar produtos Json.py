@@ -45,6 +45,7 @@ def cadastrar_produtos():
     try:
         with open("1_5_arquivo_produto.json", "w", encoding="utf-8") as arquivo:
             json.dump(produtos, arquivo, ensure_ascii=False, indent=4)
+        # Arquivo gerado com sucesso
         print("Arquivo '1_5_arquivo_produto.json' gerado com sucesso!")
     except Exception as e:
         print(f"Erro ao gerar o arquivo JSON: {e}")
